@@ -27,7 +27,7 @@ pkgTest <- function(pkg){
 # ex: stringr
 # lapply(c("stringr"),  pkgTest)
 
-lapply(c("survival", "eha", "tidyverse", "ggfortify", "stargazer"),  pkgTest)
+lapply(c("survival", "eha", "tidyverse", "ggfortify", "stargazer", "vglm"),  pkgTest)
 
 #### Survival Analysis
 data(child)
@@ -97,14 +97,16 @@ stargazer(cox.int, type = "text")
 
 education_data <- read.table("https://www.john-fox.ca/AppliedRegression/datasets/Long-PhDs.txt")
 
-with(education_data, hist(satVerbal))
-with(education_data, hist(satMath))
+#with(education_data, hist(satVerbal))
+#with(education_data, hist(satMath))
+
+with(education_data, hist(job))
 
 # OLS on original data
-summary(m1 <- lm(satVerbal ~ ., education_data)) 
-summary(m1 <- lm(satMath ~ ., education_data)) 
+summary(m1 <- lm(job ~ ., education_data)) 
+summary(m1 <- lm( ~ ., education_data)) 
 
 # Tobit 
-summary(m.tobit <- vglm(satVerbal ~ ., tobit(Lower = 200, Upper = 800), education_data)) 
-summary(m.tobit <- vglm(satMath ~ ., tobit(Lower = 200, Upper = 800), education_data)) 
+summary(m.tobit <- vglm(job ~ ., tobit(Lower = 200, Upper = 800), education_data)) 
+summary(m.tobit <- vglm(phd ~ ., tobit(Lower = 200, Upper = 800), education_data)) 
 

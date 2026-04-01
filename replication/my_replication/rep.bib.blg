@@ -1,0 +1,5 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'rep.bib.blg'
+[58] biber:342> INFO - === Tue Mar 31, 2026, 23:26:37
+[158] Utils.pm:479> ERROR - Cannot find 'rep.bib.bcf'!
+[158] Biber.pm:137> INFO - ERRORS: 1

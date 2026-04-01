@@ -1,0 +1,44 @@
+
+% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
+% Date and time: Thu, Mar 26, 2026 - 13:35:10
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lcccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{4}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-5} 
+\\[-1.8ex] & \multicolumn{4}{c}{ } \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4)\\ 
+\hline \\[-1.8ex] 
+ chamberSenate & 0.344 & 0.341 & 0.365 & 0.359 \\ 
+  & (0.030) & (0.030) & (0.033) & (0.033) \\ 
+  & & & & \\ 
+ as.factor(cong)110 & 0.023 & 0.023 &  &  \\ 
+  & (0.024) & (0.024) &  &  \\ 
+  & & & & \\ 
+ as.factor(cong)111 & 0.026 & 0.029 & $-$0.003 & 0.0004 \\ 
+  & (0.024) & (0.024) & (0.023) & (0.023) \\ 
+  & & & & \\ 
+ as.factor(cong)112 & 0.121 & 0.121 & 0.017 & 0.018 \\ 
+  & (0.026) & (0.026) & (0.025) & (0.025) \\ 
+  & & & & \\ 
+ tw.ideo.mean & $-$0.153 &  & $-$0.203 &  \\ 
+  & (0.041) &  & (0.043) &  \\ 
+  & & & & \\ 
+ white.pop &  & $-$0.276 &  & $-$0.264 \\ 
+  &  & (0.075) &  & (0.082) \\ 
+  & & & & \\ 
+ nonwhite & 0.091 & 0.060 & 0.090 & 0.078 \\ 
+  & (0.034) & (0.039) & (0.037) & (0.043) \\ 
+  & & & & \\ 
+ Constant & 0.157 & 0.372 & 0.175 & 0.380 \\ 
+  & (0.019) & (0.063) & (0.018) & (0.068) \\ 
+  & & & & \\ 
+\hline \\[-1.8ex] 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{4}{r}{NA} \\ 
+\end{tabular} 
+\end{table} 

@@ -1,0 +1,50 @@
+
+% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
+% Date and time: Sat, Mar 28, 2026 - 08:34:02
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lcccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{4}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-5} 
+\\[-1.8ex] & \multicolumn{4}{c}{ } \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4)\\ 
+\hline \\[-1.8ex] 
+ chamberSenate & 0.231 & 0.231 & 0.091 & 0.091 \\ 
+  & (0.033) & (0.033) & (0.033) & (0.034) \\ 
+  & & & & \\ 
+ dwnom1 & 0.004 & 0.006 & 0.017 & 0.019 \\ 
+  & (0.016) & (0.016) & (0.017) & (0.017) \\ 
+  & & & & \\ 
+ as.factor(cong)110 & $-$0.025 & $-$0.024 &  &  \\ 
+  & (0.019) & (0.019) &  &  \\ 
+  & & & & \\ 
+ as.factor(cong)111 & $-$0.064 & $-$0.064 &  & $-$0.033 \\ 
+  & (0.019) & (0.019) &  & (0.018) \\ 
+  & & & & \\ 
+ as.factor(cong)112 & 0.064 & 0.065 &  & $-$0.031 \\ 
+  & (0.021) & (0.021) &  & (0.019) \\ 
+  & & & & \\ 
+ cong &  &  & $-$0.015 &  \\ 
+  &  &  & (0.009) &  \\ 
+  & & & & \\ 
+ vet.any & 0.048 &  & 0.063 &  \\ 
+  & (0.020) &  & (0.022) &  \\ 
+  & & & & \\ 
+ vet.mainbranch &  & 0.057 &  & 0.048 \\ 
+  &  & (0.026) &  & (0.025) \\ 
+  & & & & \\ 
+ log(vets.exp) & 0.046 & 0.046 & 0.028 & 0.029 \\ 
+  & (0.012) & (0.012) & (0.015) & (0.015) \\ 
+  & & & & \\ 
+ Constant & $-$0.481 & $-$0.481 & 1.399 & $-$0.271 \\ 
+  & (0.147) & (0.147) & (1.007) & (0.180) \\ 
+  & & & & \\ 
+\hline \\[-1.8ex] 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{4}{r}{NA} \\ 
+\end{tabular} 
+\end{table} 

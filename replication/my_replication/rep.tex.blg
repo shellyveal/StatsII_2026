@@ -1,0 +1,5 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'rep.tex.blg'
+[57] biber:342> INFO - === Tue Mar 31, 2026, 23:27:24
+[150] Utils.pm:479> ERROR - Cannot find 'rep.tex.bcf'!
+[151] Biber.pm:137> INFO - ERRORS: 1

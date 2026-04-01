@@ -1,0 +1,487 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{cq_info}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e5fd2696ceb8ab8946a618333b51d6f6}{%
+           family={{CQ Press}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{e5fd2696ceb8ab8946a618333b51d6f6}
+      \strng{fullhash}{e5fd2696ceb8ab8946a618333b51d6f6}
+      \strng{fullhashraw}{e5fd2696ceb8ab8946a618333b51d6f6}
+      \strng{bibnamehash}{e5fd2696ceb8ab8946a618333b51d6f6}
+      \strng{authorbibnamehash}{e5fd2696ceb8ab8946a618333b51d6f6}
+      \strng{authornamehash}{e5fd2696ceb8ab8946a618333b51d6f6}
+      \strng{authorfullhash}{e5fd2696ceb8ab8946a618333b51d6f6}
+      \strng{authorfullhashraw}{e5fd2696ceb8ab8946a618333b51d6f6}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://info.cq.com/}}
+      \field{note}{Accessed 2026-03-31}
+      \field{title}{CQ Information Services}
+    \endentry
+    \entry{crenshaw_intersectionality}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c03be1c401abd6524ea2a42f01d22088}{%
+           family={Crenshaw},
+           familyi={C\bibinitperiod},
+           given={Kimberlé\bibnamedelima Williams},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The New Press}%
+      }
+      \strng{namehash}{c03be1c401abd6524ea2a42f01d22088}
+      \strng{fullhash}{c03be1c401abd6524ea2a42f01d22088}
+      \strng{fullhashraw}{c03be1c401abd6524ea2a42f01d22088}
+      \strng{bibnamehash}{c03be1c401abd6524ea2a42f01d22088}
+      \strng{authorbibnamehash}{c03be1c401abd6524ea2a42f01d22088}
+      \strng{authornamehash}{c03be1c401abd6524ea2a42f01d22088}
+      \strng{authorfullhash}{c03be1c401abd6524ea2a42f01d22088}
+      \strng{authorfullhashraw}{c03be1c401abd6524ea2a42f01d22088}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{On Intersectionality: Essential Writings}
+      \field{year}{2017}
+    \endentry
+    \entry{Dehingia2023}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=8a209f623ec5466587e5f3d738a38a12}{%
+           family={Dehingia},
+           familyi={D\bibinitperiod},
+           given={Nabamallika},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e5924293f1e2b981766002f918e1ccf0}{%
+           family={Klugman},
+           familyi={K\bibinitperiod},
+           given={Jeni},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0ac547371a91cfacfc326c767c9b67d}{%
+           family={Ortiz},
+           familyi={O\bibinitperiod},
+           given={Elena},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0880e394015826b1e1e8caddb1240d13}{%
+           family={Raj},
+           familyi={R\bibinitperiod},
+           given={Anita},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d15a2666b3160167aa685e6ce9a9ffa9}
+      \strng{fullhash}{781e95d8d59a5267b74b5425e659e563}
+      \strng{fullhashraw}{781e95d8d59a5267b74b5425e659e563}
+      \strng{bibnamehash}{781e95d8d59a5267b74b5425e659e563}
+      \strng{authorbibnamehash}{781e95d8d59a5267b74b5425e659e563}
+      \strng{authornamehash}{d15a2666b3160167aa685e6ce9a9ffa9}
+      \strng{authorfullhash}{781e95d8d59a5267b74b5425e659e563}
+      \strng{authorfullhashraw}{781e95d8d59a5267b74b5425e659e563}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Feminist Economics}
+      \field{number}{2}
+      \field{title}{Race/Ethnicity and Sex Differences in Attitudes Toward Policies for Gender Equality in the United States}
+      \field{volume}{29}
+      \field{year}{2023}
+      \field{pages}{1\bibrangedash 31}
+      \range{pages}{31}
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/13545701.2022.2128199
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/13545701.2022.2128199
+      \endverb
+    \endentry
+    \entry{hughes_tuch_gender_racial_attitudes}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f6e03cc60aaa26aa3dc5630d8dc53cde}{%
+           family={Hughes},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f6c9141d70c912f2b01e9531407b39ce}{%
+           family={Tuch},
+           familyi={T\bibinitperiod},
+           given={Steven\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c9328e41736740facb45a6f6e859d84c}
+      \strng{fullhash}{c9328e41736740facb45a6f6e859d84c}
+      \strng{fullhashraw}{c9328e41736740facb45a6f6e859d84c}
+      \strng{bibnamehash}{c9328e41736740facb45a6f6e859d84c}
+      \strng{authorbibnamehash}{c9328e41736740facb45a6f6e859d84c}
+      \strng{authornamehash}{c9328e41736740facb45a6f6e859d84c}
+      \strng{authorfullhash}{c9328e41736740facb45a6f6e859d84c}
+      \strng{authorfullhashraw}{c9328e41736740facb45a6f6e859d84c}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Social Problems}
+      \field{number}{4}
+      \field{title}{Gender Differences in Whites' Racial Attitudes: Are Women's Attitudes Really More Favorable?}
+      \field{volume}{66}
+      \field{year}{2003}
+      \field{pages}{384\bibrangedash 401}
+      \range{pages}{18}
+      \verb{urlraw}
+      \verb https://doi.org/10.2307/1519836
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.2307/1519836
+      \endverb
+    \endentry
+    \entry{lowande2019}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=bf6e63ca15727cea0079a9d67414f745}{%
+           family={Lowande},
+           familyi={L\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eb5c65cb5cb7a2b1ffde1bb55627eb03}{%
+           family={Ritchie},
+           familyi={R\bibinitperiod},
+           given={Melinda},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f96abd77f752263ef0aeaa1cf078c47}{%
+           family={Lauterbach},
+           familyi={L\bibinitperiod},
+           given={Erinn},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3bb858c701303fb9d45212e6f76235cc}
+      \strng{fullhash}{f7eb0c9f16e7622c4adbeffc78934634}
+      \strng{fullhashraw}{f7eb0c9f16e7622c4adbeffc78934634}
+      \strng{bibnamehash}{f7eb0c9f16e7622c4adbeffc78934634}
+      \strng{authorbibnamehash}{f7eb0c9f16e7622c4adbeffc78934634}
+      \strng{authornamehash}{3bb858c701303fb9d45212e6f76235cc}
+      \strng{authorfullhash}{f7eb0c9f16e7622c4adbeffc78934634}
+      \strng{authorfullhashraw}{f7eb0c9f16e7622c4adbeffc78934634}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Journal of Political Science}
+      \field{number}{3}
+      \field{title}{Descriptive and Substantive Representation in Congress: Evidence from 80,000 Congressional Inquiries}
+      \field{volume}{63}
+      \field{year}{2019}
+      \field{pages}{644\bibrangedash 659}
+      \range{pages}{16}
+      \verb{urlraw}
+      \verb https://doi.org/10.1111/ajps.12443
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1111/ajps.12443
+      \endverb
+    \endentry
+    \entry{openai_chatgpt}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0523b13262b12c215d8009938f5c14f1}{%
+           family={{OpenAI}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{fullhash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{fullhashraw}{0523b13262b12c215d8009938f5c14f1}
+      \strng{bibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorbibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authornamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorfullhash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorfullhashraw}{0523b13262b12c215d8009938f5c14f1}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Large language model}
+      \field{note}{Accessed 2026-03-31}
+      \field{title}{ChatGPT (used for bibliography compilation)}
+      \field{year}{2026}
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{cq_info}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e5fd2696ceb8ab8946a618333b51d6f6}{%
+           family={{CQ Press}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{e5fd2696ceb8ab8946a618333b51d6f6}
+      \strng{fullhash}{e5fd2696ceb8ab8946a618333b51d6f6}
+      \strng{fullhashraw}{e5fd2696ceb8ab8946a618333b51d6f6}
+      \strng{bibnamehash}{e5fd2696ceb8ab8946a618333b51d6f6}
+      \strng{authorbibnamehash}{e5fd2696ceb8ab8946a618333b51d6f6}
+      \strng{authornamehash}{e5fd2696ceb8ab8946a618333b51d6f6}
+      \strng{authorfullhash}{e5fd2696ceb8ab8946a618333b51d6f6}
+      \strng{authorfullhashraw}{e5fd2696ceb8ab8946a618333b51d6f6}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://info.cq.com/}}
+      \field{note}{Accessed 2026-03-31}
+      \field{title}{CQ Information Services}
+    \endentry
+    \entry{crenshaw_intersectionality}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c03be1c401abd6524ea2a42f01d22088}{%
+           family={Crenshaw},
+           familyi={C\bibinitperiod},
+           given={Kimberlé\bibnamedelima Williams},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The New Press}%
+      }
+      \strng{namehash}{c03be1c401abd6524ea2a42f01d22088}
+      \strng{fullhash}{c03be1c401abd6524ea2a42f01d22088}
+      \strng{fullhashraw}{c03be1c401abd6524ea2a42f01d22088}
+      \strng{bibnamehash}{c03be1c401abd6524ea2a42f01d22088}
+      \strng{authorbibnamehash}{c03be1c401abd6524ea2a42f01d22088}
+      \strng{authornamehash}{c03be1c401abd6524ea2a42f01d22088}
+      \strng{authorfullhash}{c03be1c401abd6524ea2a42f01d22088}
+      \strng{authorfullhashraw}{c03be1c401abd6524ea2a42f01d22088}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{On Intersectionality: Essential Writings}
+      \field{year}{2017}
+    \endentry
+    \entry{Dehingia2023}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=8a209f623ec5466587e5f3d738a38a12}{%
+           family={Dehingia},
+           familyi={D\bibinitperiod},
+           given={Nabamallika},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e5924293f1e2b981766002f918e1ccf0}{%
+           family={Klugman},
+           familyi={K\bibinitperiod},
+           given={Jeni},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0ac547371a91cfacfc326c767c9b67d}{%
+           family={Ortiz},
+           familyi={O\bibinitperiod},
+           given={Elena},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0880e394015826b1e1e8caddb1240d13}{%
+           family={Raj},
+           familyi={R\bibinitperiod},
+           given={Anita},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d15a2666b3160167aa685e6ce9a9ffa9}
+      \strng{fullhash}{781e95d8d59a5267b74b5425e659e563}
+      \strng{fullhashraw}{781e95d8d59a5267b74b5425e659e563}
+      \strng{bibnamehash}{781e95d8d59a5267b74b5425e659e563}
+      \strng{authorbibnamehash}{781e95d8d59a5267b74b5425e659e563}
+      \strng{authornamehash}{d15a2666b3160167aa685e6ce9a9ffa9}
+      \strng{authorfullhash}{781e95d8d59a5267b74b5425e659e563}
+      \strng{authorfullhashraw}{781e95d8d59a5267b74b5425e659e563}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Feminist Economics}
+      \field{number}{2}
+      \field{title}{Race/Ethnicity and Sex Differences in Attitudes Toward Policies for Gender Equality in the United States}
+      \field{volume}{29}
+      \field{year}{2023}
+      \field{pages}{1\bibrangedash 31}
+      \range{pages}{31}
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/13545701.2022.2128199
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/13545701.2022.2128199
+      \endverb
+    \endentry
+    \entry{hughes_tuch_gender_racial_attitudes}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f6e03cc60aaa26aa3dc5630d8dc53cde}{%
+           family={Hughes},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f6c9141d70c912f2b01e9531407b39ce}{%
+           family={Tuch},
+           familyi={T\bibinitperiod},
+           given={Steven\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c9328e41736740facb45a6f6e859d84c}
+      \strng{fullhash}{c9328e41736740facb45a6f6e859d84c}
+      \strng{fullhashraw}{c9328e41736740facb45a6f6e859d84c}
+      \strng{bibnamehash}{c9328e41736740facb45a6f6e859d84c}
+      \strng{authorbibnamehash}{c9328e41736740facb45a6f6e859d84c}
+      \strng{authornamehash}{c9328e41736740facb45a6f6e859d84c}
+      \strng{authorfullhash}{c9328e41736740facb45a6f6e859d84c}
+      \strng{authorfullhashraw}{c9328e41736740facb45a6f6e859d84c}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Social Problems}
+      \field{number}{4}
+      \field{title}{Gender Differences in Whites' Racial Attitudes: Are Women's Attitudes Really More Favorable?}
+      \field{volume}{66}
+      \field{year}{2003}
+      \field{pages}{384\bibrangedash 401}
+      \range{pages}{18}
+      \verb{urlraw}
+      \verb https://doi.org/10.2307/1519836
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.2307/1519836
+      \endverb
+    \endentry
+    \entry{lowande2019}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=bf6e63ca15727cea0079a9d67414f745}{%
+           family={Lowande},
+           familyi={L\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eb5c65cb5cb7a2b1ffde1bb55627eb03}{%
+           family={Ritchie},
+           familyi={R\bibinitperiod},
+           given={Melinda},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f96abd77f752263ef0aeaa1cf078c47}{%
+           family={Lauterbach},
+           familyi={L\bibinitperiod},
+           given={Erinn},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3bb858c701303fb9d45212e6f76235cc}
+      \strng{fullhash}{f7eb0c9f16e7622c4adbeffc78934634}
+      \strng{fullhashraw}{f7eb0c9f16e7622c4adbeffc78934634}
+      \strng{bibnamehash}{f7eb0c9f16e7622c4adbeffc78934634}
+      \strng{authorbibnamehash}{f7eb0c9f16e7622c4adbeffc78934634}
+      \strng{authornamehash}{3bb858c701303fb9d45212e6f76235cc}
+      \strng{authorfullhash}{f7eb0c9f16e7622c4adbeffc78934634}
+      \strng{authorfullhashraw}{f7eb0c9f16e7622c4adbeffc78934634}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Journal of Political Science}
+      \field{number}{3}
+      \field{title}{Descriptive and Substantive Representation in Congress: Evidence from 80,000 Congressional Inquiries}
+      \field{volume}{63}
+      \field{year}{2019}
+      \field{pages}{644\bibrangedash 659}
+      \range{pages}{16}
+      \verb{urlraw}
+      \verb https://doi.org/10.1111/ajps.12443
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1111/ajps.12443
+      \endverb
+    \endentry
+    \entry{openai_chatgpt}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0523b13262b12c215d8009938f5c14f1}{%
+           family={{OpenAI}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{fullhash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{fullhashraw}{0523b13262b12c215d8009938f5c14f1}
+      \strng{bibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorbibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authornamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorfullhash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorfullhashraw}{0523b13262b12c215d8009938f5c14f1}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Large language model}
+      \field{note}{Accessed 2026-03-31}
+      \field{title}{ChatGPT (used for bibliography compilation)}
+      \field{year}{2026}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
