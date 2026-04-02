@@ -110,3 +110,34 @@ summary(m1 <- lm( ~ ., education_data))
 summary(m.tobit <- vglm(job ~ ., tobit(Lower = 200, Upper = 800), education_data)) 
 summary(m.tobit <- vglm(phd ~ ., tobit(Lower = 200, Upper = 800), education_data)) 
 
+install.packages('sampleSelection')
+library(sampleSelection)
+data("Mroz87")
+
+summary(lm(wage ~ educ + exper + age + kids5, data = Mroz87))
+
+heck <- selection(
+  selection = lfp ~ educ + exper + age + kids5,
+  outcome = wage ~ educ + exper + age + kids5,
+  data = Mroz87
+)
+
+
+summary(heck)
+hek <- heckit(lfp ~ educ + exper + age + kids5, 
+       wage ~ educ + exper + age + kids5,
+       data = Mroz87)
+
+view(Mroz87)
+
+glm(r.vet ~ vet.mainbranch+chamber+dwnom1+as.factor(cong)+log(vets.exp),
+                            data = main, family = binomial(link = "logit"))
+
+glm(r.fem ~ female+chamber+dwnom1+as.factor(cong)+tw.ideo.mean,
+                   data = main, family = binomial(link = "logit"))
+
+glm(r.race ~ nonwhite+chamber+as.factor(cong)+dwnom1+tw.ideo.mean+white.pop,
+                        data = main, family = binomial(link = "logit"))
+
+
+

@@ -1,0 +1,220 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{graphicx,textcomp}
+\usepackage{natbib}
+\usepackage{setspace}
+\usepackage{fullpage}
+\usepackage{color}
+\usepackage[reqno]{amsmath}
+\usepackage{amsthm}
+\usepackage{fancyvrb}
+\usepackage{amssymb,enumerate}
+\usepackage[all]{xy}
+\usepackage{endnotes}
+\usepackage{lscape}
+\newtheorem{com}{Comment}
+\usepackage{float}
+\usepackage{hyperref}
+\newtheorem{lem} {Lemma}
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{cor}{Corollary}
+\newtheorem{obs}{Observation}
+\usepackage[compact]{titlesec}
+\usepackage{dcolumn}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usepackage{multirow}
+\usepackage{xcolor}
+\newcolumntype{.}{D{.}{.}{-1}}
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+\definecolor{light-gray}{gray}{0.65}
+\usepackage{url}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+\lstset{style=mystyle}
+\newcommand{\Sref}[1]{Section~\ref{#1}}
+\newtheorem{hyp}{Hypothesis}
+
+\title{Problem Set 4}
+\date{Due: April 10, 2026}
+\author{Shelly Veal-Upham}
+
+
+\begin{document}
+	\maketitle
+	\section*{Instructions}
+	\begin{itemize}
+	\item Please show your work! You may lose points by simply writing in the answer. If the problem requires you to execute commands in \texttt{R}, please include the code you used to get your answers. Please also include the \texttt{.R} file that contains your code. If you are not sure if work needs to be shown for a particular problem, please ask.
+	\item Your homework should be submitted electronically on GitHub in \texttt{.pdf} form.
+	\item This problem set is due before 23:59 on Friday April 10, 2026. No late assignments will be accepted.
+
+	\end{itemize}
+
+	\vspace{.25cm}
+\section*{Question 1}
+\vspace{.25cm}
+\noindent We're interested in modeling the historical causes of child mortality. We have data from 26855 children born in Skellefteå, Sweden from 1850 to 1884. Using the "child" dataset in the \texttt{eha} library, fit a Cox Proportional Hazard model using mother's age and infant's gender as covariates. Present and interpret the output.\\
+\vspace{0.2cm}
+
+First I created a survival object on the "child" data, using "enter" as the time1, "exit" at time2, and "event" as the event (time of death). I fit a Cox Proportional Hazard model with mother's age and infant's gender as covariates in the following code, and summarized the results in Table~\ref{tab1}. 
+
+	\lstinputlisting[language=R, firstline=41, lastline=45]{PS04_SVU.R}
+\newpage
+
+\begin{table}[!htbp] \centering 
+	\caption{Cox PH Model Child Mortality} 
+	\label{tab1} 
+	\begin{tabular}{@{\extracolsep{5pt}}lc} 
+		\\[-1.8ex]\hline 
+		\hline \\[-1.8ex] 
+		& \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+		\cline{2-2} 
+		\\[-1.8ex] & child\_surv \\ 
+		\hline \\[-1.8ex] 
+		sexfemale & $-$0.082$^{***}$ \\ 
+		& (0.027) \\ 
+		m.age & 0.008$^{***}$ \\ 
+		& (0.002) \\ 
+		\hline \\[-1.8ex] 
+		Observations & 26,574 \\ 
+		R$^{2}$ & 0.001 \\ 
+		Max. Possible R$^{2}$ & 0.986 \\ 
+		Log Likelihood & $-$56,503.480 \\ 
+		Wald Test & 22.520$^{***}$ (df = 2) \\ 
+		LR Test & 22.518$^{***}$ (df = 2) \\ 
+		Score (Logrank) Test & 22.530$^{***}$ (df = 2) \\ 
+		\hline 
+		\hline \\[-1.8ex] 
+		\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+	\end{tabular} 
+\end{table}
+
+Child mortality is significantly linked to sex of the child and age of the mother according to this model. More specifically, female children have a hazard ratio of $e^{-0.082}$ = 0.92, suggesting that their hazard of dying at any given point is 8\% lower than male children, holding mother's age constant. Also, a one-unit increase in mother's age (presumably at time of childbirth) results in a $e^{0.008}$ = 1.01 multiplicative increase in child's hazard ratio. In other terms, every year older the mother is, the hazard of her child dying at any time in this timeframe increases by one percent.\\
+
+To ensure this model is sensible and the factors included are reasonable, I ran the \texttt{drop1()} function in \texttt{R}, and found that dropping sex or mother's age results in significant worsening of the model (as seen in jumps in the AIC and the LRT statistics displayed in Table~\ref{tab2}):\\
+
+	\lstinputlisting[language=R, firstline=48, lastline=50]{PS04_SVU.R}
+
+\begin{table}[ht]
+	\centering
+	\caption{\texttt{drop1()} Test Results:} 
+	\label{tab2} 
+	\begin{tabular}{lrrrr}
+		\hline
+		& Df & AIC & LRT & Pr($>$Chi) \\ 
+		\hline
+		$<$none$>$ &  & 113010.97 &  &  \\ 
+		sex & 1 & 113018.43 & 9.46 & 0.0021 \\ 
+		m.age & 1 & 113021.76 & 12.79 & 0.0003 \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\newpage
+
+\section*{Question 2}
+\vspace{.25cm}
+\noindent We want to estimate how the amount of damage caused by a disaster relates to (1) whether disaster relief is provided and (2) the amount of relief that is provided  conditional on a donation occurring when a disaster hits a given country. Estimate a Heckman selection model using the \texttt{disasters\_response} data on \href{https://raw.githubusercontent.com/ASDS-TCD/StatsII_2026/refs/heads/main/datasets/disaster_response.csv}{GitHub} in which \texttt{binContribution} is the outcome for the selection equation, and \texttt{originalContributionMillionUSDLogged} is the outcome for the second equation. Use \texttt{occurrences  + deathsEM + normalizedDamageEMLogged} as your input variables for both equations. Present and interpret the output.
+\vspace{0.2cm}
+
+The idea in applying the Heckman model here is that the relationship between amount of damage caused by a disaster and the relief provided is muddled by the selection criterium of whether the disaster area received relief at all. By using a selection model (probit), we can correct first for which disaster areas recieve control, the influencing factors of which are summarized by coefficients (on a latent scale) in Table~\ref{tab3}.
+
+	\lstinputlisting[language=R, firstline=58, lastline=63]{PS04_SVU.R}
+	
+\begin{table}[!htbp] \centering 
+	\caption{Heckman Selection Model (Probit)} 
+	\label{tab3} 
+	\begin{tabular}{@{\extracolsep{5pt}}lc} 
+		\\[-1.8ex]\hline 
+		\hline \\[-1.8ex] 
+		& \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+		\cline{2-2} 
+		\\[-1.8ex] & binContribution \\ 
+		\hline \\[-1.8ex] 
+		occurrences & 0.019 $^{***}$\\ 
+		& (0.002) \\ 
+		deathsEM & 0.012$^{***}$ \\ 
+		& (0.001) \\ 
+		normalizedDamageEMLogged & 0.021$^{***}$ \\ 
+		& (0.001) \\ 
+		Constant & $-$1.304 $^{***}$\\ 
+		& (0.018) \\ 
+		\hline \\[-1.8ex] 
+		Observations & 49,096 \\ 
+		Log Likelihood & $-$17,557.780 \\ 
+		$\rho$ & $-$0.527$^{***}$  (0.091) \\ 
+		\hline 
+		\hline \\[-1.8ex] 
+		\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+	\end{tabular} 
+\end{table} 
+* Note- I hand-edited the basic Heckman stargazer table using output values from the \texttt{summary()} function to create Table~\ref{tab3}.\\
+
+The positive coefficients for each of our explanatory variables suggests that higher values of them contribute positively to a disaster area receiveing relief. In the Outcome Model (Table~\ref{tab4}), we see the coefficients that reflect the relationship between damage and relief, corrected for the selection bias.\\
+
+	\lstinputlisting[language=R, firstline=67, lastline=67]{PS04_SVU.R}
+
+\begin{table}[!htbp] \centering 
+	\caption{Heckman Outcome Model} 
+	\label{tab4} 
+	\begin{tabular}{@{\extracolsep{5pt}}lc} 
+		\\[-1.8ex]\hline 
+		\hline \\[-1.8ex] 
+		& \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+		\cline{2-2} 
+		\\[-1.8ex] & originalContributionMillionUSDLogged \\ 
+		\hline \\[-1.8ex] 
+		occurrences & $-$0.002 \\ 
+		& (0.006) \\ 
+		& \\ 
+		deathsEM & 0.006$^{***}$ \\ 
+		& (0.002) \\ 
+		& \\ 
+		normalizedDamageEMLogged & $-$0.018$^{***}$ \\ 
+		& (0.005) \\ 
+		& \\ 
+		Constant & 0.413 \\ 
+		& (0.407) \\ 
+		& \\ 
+		\hline \\[-1.8ex] 
+		Observations & 49,096 \\ 
+		Log Likelihood & $-$17,557.780 \\ 
+		$\rho$ & $-$0.527$^{***}$  (0.091) \\ 
+		\hline 
+		\hline \\[-1.8ex] 
+		\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+	\end{tabular} 
+\end{table} 
+
+Interpreting this model output, we might say that, among areas that \textit{do} recieve aid, for every one-unit increase in \texttt{deathsEM}, we expect a 0.006 unit increase in the \\
+\texttt{originalContributionMillionUSDLogged} variable (possibly log-millions USD in original aid contributed to the disaster area). Having controlled for selection bias with the probit model, our signs on the coefficient for amount of damage flips, indicating now that (among areas recieving aid), a one-unit increase in the \texttt{normalizedDamageEMLogged} variable (approximation of damage) results in a 0.018 decrease in the aid contributed\\
+(\texttt{originalContributionMillionUSDLogged} variable). This is an interesting finding-- that conditional on receiving aid, the amount of damage is \textbf{negatively correlated} with amount of aid received.
+
+
+\end{document}

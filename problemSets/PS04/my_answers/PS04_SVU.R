@@ -27,7 +27,9 @@ pkgTest <- function(pkg){
 # ex: stringr
 # lapply(c("stringr"),  pkgTest)
 
-lapply(c("nnet", "MASS"),  pkgTest)
+lapply(c("survival", "eha", "tidyverse", "ggfortify", 
+         "stargazer", "vglm", "dplyr", "sampleSelection",
+         "xtable"),  pkgTest)
 
 # set wd for current folder
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
@@ -38,10 +40,32 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 # load data on child mortality by mother's background and child gender
 data("child")
+child_surv <- with(child, Surv(enter, exit, event))
+child_CH <- coxph(child_surv ~ sex + m.age, data = child)
+stargazer(child_CH, type = "latex")
+
+
+# Testing to ensure both factors are important.
+test <- drop1(child_CH, test = "Chisq") 
+xtable(test, type = "latex")
 
 #####################
 # Problem 2
 #####################
 
+
 # load data
 disaster_data <- read.csv("https://raw.githubusercontent.com/ASDS-TCD/StatsII_2026/refs/heads/main/datasets/disaster_response.csv")
+heck <- selection(
+  selection = binContribution ~ occurrences + deathsEM + normalizedDamageEMLogged,
+  outcome = originalContributionMillionUSDLogged ~ occurrences + deathsEM + normalizedDamageEMLogged,
+  data = disaster_data)
+summary(heck)
+
+
+
+stargazer(heck, type = "latex")
+
+
+
+

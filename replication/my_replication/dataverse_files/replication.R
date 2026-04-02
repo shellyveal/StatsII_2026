@@ -25,7 +25,7 @@ pkgTest <- function(pkg){
 lapply(c("MASS", "cem", "foreach", "doMC", "doRNG", 
          "tidyverse", "ggplot2", "stargazer",
          "patchwork", "showtext", "ggtext", "xtable",
-         "purrr", "systemfonts", 
+         "purrr", "systemfonts",
          "ggfortify", "usmap"),  pkgTest)
 
 showtext_auto()
@@ -175,6 +175,7 @@ minority_maps <- f2e + f2f
 getwd()
 
 # ---------------------------
+load('t2-b10-main.Rdata')
 
 
 glimpse(main)
